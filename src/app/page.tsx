@@ -1,46 +1,29 @@
 // Portfolio Starter Code for WILDR£AM$
 
 // File: app/page.tsx
-'use client';
+// app/page.tsx (Next.js 13+ App Router)
+// app/page.tsx
+// app/page.tsx
+"use client";
 
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import Hero from "@/components/sections/Hero";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen px-4 text-center bg-black text-white">
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl md:text-6xl font-bold mb-4"
-      >
-        WILDR£AM$
-      </motion.h1>
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-xl md:text-2xl mb-6"
-      >
-        Frontend Developer on a mission from the trenches
-      </motion.h2>
-      <div className="flex gap-4">
-        <Button asChild className="bg-white text-black hover:bg-gray-200">
-          <Link href="/resume.pdf" download>
-            Download Resume
-          </Link>
-        </Button>
-        <Button asChild variant="outline">
-          <Link href="/projects">
-            View Projects
-          </Link>
-        </Button>
-      </div>
+    <main className="min-h-screen text-gray-900">
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </main>
   );
 }
+
 
 // Folder structure includes:
 // - /public/resume.pdf (You will place your resume here)
