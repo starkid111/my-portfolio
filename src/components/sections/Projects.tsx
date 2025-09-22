@@ -4,8 +4,15 @@ import { ExternalLink, Github } from "lucide-react";
 
 import { motion } from "framer-motion";
 
+type Project = {
+  title: string;
+  desc: string;
+  demo: string;
+  github: string;
+};
+
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Food Recipe App",
       desc: "A recipe web app built with React & Tailwind, fetching data from an external API.",
@@ -38,7 +45,7 @@ export default function Projects() {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, i) : any => (
+          {projects.map((project, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}

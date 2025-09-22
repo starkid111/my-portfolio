@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Menu } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 import { motion } from "framer-motion";
 
