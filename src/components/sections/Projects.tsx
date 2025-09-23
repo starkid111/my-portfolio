@@ -2,9 +2,11 @@
 
 import { ExternalLink, Github } from "lucide-react";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Project = {
+   src: string; 
   title: string;
   desc: string;
   demo: string;
@@ -14,22 +16,25 @@ type Project = {
 export default function Projects() {
   const projects: Project[] = [
     {
+        src: "/foodieland.png",
       title: "Food Recipe App",
       desc: "A recipe web app built with React & Tailwind, fetching data from an external API.",
-      demo: "https://your-live-demo-link.com",
-      github: "https://github.com/yourusername/food-recipe-app",
+      demo: "https://foodieland-olive.vercel.app/",
+      github: "https://github.com/starkid111/Food-Order-App",
     },
     {
+         src: "/cauntr.png",
       title: "E-Commerce Demo",
       desc: "A full-stack e-commerce-like project using Next.js, TypeScript, and Supabase Auth.",
-      demo: "https://your-live-demo-link.com",
-      github: "https://github.com/yourusername/ecommerce-demo",
+      demo: "https://cauntr-ui.vercel.app/signup",
+      github: "https://github.com/stDean/cauntr-ui",
     },
     {
-      title: "Task Manager App",
-      desc: "A React app using Context API & useReducer for state management, tracking tasks efficiently.",
-      demo: "https://your-live-demo-link.com",
-      github: "https://github.com/yourusername/task-manager-app",
+         src: "/qyra.png",
+      title: "Qyra Pass",
+      desc: "A Landing page built with React & Tailwind.",
+      github: "https://github.com/deyemiobaa/qyrapass.com",
+      demo: "https://qyrapass-com.vercel.app/",
     },
   ];
 
@@ -43,7 +48,7 @@ export default function Projects() {
       className="py-20 px-6"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 tracking-widest">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <motion.div
@@ -54,6 +59,7 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               className="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition"
             >
+               <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4"/>
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{project.desc}</p>
               <div className="flex gap-3">

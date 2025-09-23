@@ -12,15 +12,28 @@ export default function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover bg-center bg-no-repeat"
+      className="py-20 px-6 bg-cover  bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
     >
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-        <p className="text-gray-600 mb-6">
+      <div className="max-w-3xl  mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4 tracking-widest">
+          Get In Touch
+        </h2>
+        <p className="text-gray-600 mt-10">
           Have a project in mind or just want to connect? Let’s talk.
         </p>
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col space-y-5 md:items-center md:flex-row  justify-center md:justify-between mt-10">
+          <div className="space-y-2">
+            <p className="tracking-widest font-semibold text-left">
+              REACH ME AT
+            </p>
+            <p className="text-gray-500 text-left">Ramadanadex111@gmail.com</p>
+          </div>
+            <div className="space-y-2">
+            <p className="tracking-widest font-semibold text-left">
+              SOCIALS
+            </p>
+             <div className="flex  gap-6">
           <a
             href="mailto:your@email.com"
             className="text-gray-600 hover:text-blue-600 transition"
@@ -42,7 +55,21 @@ export default function Contact() {
             <Linkedin size={28} />
           </a>
         </div>
+          </div>
+          <button className="tracking-widest w-full md:w-[300px] text-blue-500 border border-gray-400 py-2 items-center">
+            SAY HELLO.
+          </button>
+        </div>
+
+       
       </div>
+      <div className="mt-20  text-gray-500 space-y-10">
+          <hr />
+      <p>
+        @copyright 2025 | Designed & Built by <span className="font-bold tracking-widest">RAMADAN.</span>
+      </p>
+      </div>
+    
     </motion.section>
   );
 }

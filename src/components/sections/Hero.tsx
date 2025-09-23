@@ -51,6 +51,26 @@ export default function Hero() {
       <div className="absolute right-0 top-0">
         <Image src="/arc.svg" width={500} height={300} alt="arc" />
       </div>
+      <div className="absolute right-10 top-70 space-y-2  text-sm hidden lg:block">
+          <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
+  <span className="text-blue-600 tracking-widest transform rotate-90">
+    MEDIUM
+  </span>
+  <span className="text-blue-600 tracking-widest transform rotate-90">
+    LINKEDIN
+  </span>
+  <span className="text-blue-600 tracking-widest transform rotate-90">
+    GITHUB
+  </span>
+  <span className="text-blue-600 tracking-widest transform rotate-90">
+    TWITTER
+  </span>
+  <span className="text-blue-600 tracking-widest transform rotate-90">
+    INSTAGRAM
+  </span>
+</div>
+
+      </div>
     </motion.section>
   );
 }

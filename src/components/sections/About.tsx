@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -13,8 +14,12 @@ export default function About() {
       className="py-20 px-6 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/second-bg.svg')" }}
     >
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center tracking-widest">About Me</h2>
+            <div className="flex flex-col items-center gap-8 mt-8">
+                <div>
+                    <Image  src="/ramadan.png" width={300} height={300} alt=""/>
+                </div>
+                 <div className="max-w-3xl mx-auto text-center">
         <p className="text-gray-600 leading-relaxed">
           I’m an aspiring Software Engineer with over 2 years of frontend
           development experience. Skilled in building modern apps with React,
@@ -22,6 +27,8 @@ export default function About() {
           bringing ideas to life, and creating experiences that users love.
         </p>
       </div>
+            </div>
+     
     </motion.section>
   );
 }
