@@ -64,6 +64,14 @@ const Navbar = () => {
     { id: "contact", label: "Say Hello" },
   ];
 
+
+const mobileLinks = [
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
+    { id: "contact", label: "Say Hello" },
+  ];
+  
   return (
     <>
       {/* Desktop Navbar */}
@@ -98,7 +106,7 @@ const Navbar = () => {
         style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
         <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
-          <h1 className="font-bold tracking-widest">RAMADAN.</h1>
+          <h1 className="font-bold tracking-widest" id="home">RAMADAN.</h1>
           <div onClick={handleClick} className="cursor-pointer">
             {isOpen ? <X /> : <Menu />}
           </div>
@@ -116,7 +124,7 @@ const Navbar = () => {
               className="border border-gray-200 rounded-lg shadow-lg w-full backdrop-blur-md"
               style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
             >
-              {navLinks.map((link) => (
+              {mobileLinks.map((link) => (
                 <a
                   key={link.id}
                   href={`#${link.id}`}
