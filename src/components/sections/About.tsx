@@ -16,9 +16,7 @@ export default function About() {
     >
             <h2 className="text-3xl font-bold mb-4 text-center tracking-widest">About Me</h2>
             <div className="flex flex-col items-center gap-8 mt-8">
-                <div>
-                    <Image  src="/ramadan.png" width={300} height={300} alt=""/>
-                </div>
+              
                  <div className="max-w-3xl mx-auto text-center">
         <p className="text-gray-600 leading-relaxed">
           I’m an aspiring Software Engineer with over 2 years of frontend
