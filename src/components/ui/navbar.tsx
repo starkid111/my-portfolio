@@ -87,10 +87,10 @@ const mobileLinks = [
               onClick={(e) => handleMenuClick(e, `#${link.id}`)}
             >
               <p
-                className={`font-bold cursor-pointer tracking-widest transition-colors ${
+                className={`font-bold cursor-pointer  tracking-widest transition-colors ${
                   activeSection === link.id
-                    ? "text-blue-500"
-                    : "hover:text-blue-500"
+                    ? "text-cyan-700"
+                    : " text-gray-600 hover:text-blue-500"
                 }`}
               >
                 {link.label}
@@ -106,7 +106,7 @@ const mobileLinks = [
         style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
         <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
-          <h1 className="font-bold tracking-widest" id="home">RAMADAN.</h1>
+          <h1 className="font-bold text-gray-600 tracking-widest" id="home">RAMADAN.</h1>
           <div onClick={handleClick} className="cursor-pointer">
             {isOpen ? <X /> : <Menu />}
           </div>

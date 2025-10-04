@@ -16,41 +16,41 @@ export default function Contact() {
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
     >
       <div className="max-w-3xl  mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4 tracking-widest">
-          Get In Touch
+        <h2 className="text-3xl font-bold text-gray-600 mb-4 tracking-widest">
+          Get In Touch.
         </h2>
         <p className="text-gray-600 mt-10">
           Have a project in mind or just want to connect? Let’s talk.
         </p>
         <div className="flex flex-col space-y-5 md:items-center md:flex-row  justify-center md:justify-between mt-10">
           <div className="space-y-2">
-            <p className="tracking-widest font-semibold text-left">
+            <p className="tracking-widest font-semibold text-gray-600 text-left">
               REACH ME AT
             </p>
             <p className="text-gray-500 text-left">Ramadanadex111@gmail.com</p>
           </div>
             <div className="space-y-2">
-            <p className="tracking-widest font-semibold text-left">
+            <p className="tracking-widest text-gray-600 font-semibold text-left">
               SOCIALS
             </p>
              <div className="flex  gap-6">
           <a
             href="mailto:your@email.com"
-            className="text-gray-600 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-blue-600 transition"
           >
             <Mail size={28} />
           </a>
           <a
             href="https://github.com/yourusername"
             target="_blank"
-            className="text-gray-600 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-blue-600 transition"
           >
             <Github size={28} />
           </a>
           <a
             href="https://linkedin.com/in/yourusername"
             target="_blank"
-            className="text-gray-600 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-blue-600 transition"
           >
             <Linkedin size={28} />
           </a>

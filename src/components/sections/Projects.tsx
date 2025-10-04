@@ -48,7 +48,7 @@ export default function Projects() {
       className="py-20 px-6"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 tracking-widest">Projects</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-600 mb-12 tracking-widest">Projects.</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <motion.div
@@ -60,7 +60,7 @@ export default function Projects() {
               className="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition"
             >
                <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4"/>
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-600  mb-2">{project.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{project.desc}</p>
               <div className="flex gap-3">
                 <a

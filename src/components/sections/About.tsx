@@ -13,7 +13,7 @@ export default function About() {
       className="py-20 px-6 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/second-bg.svg')" }}
     >
-            <h2 className="text-3xl font-bold mb-4 text-center tracking-widest">About Me</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-600 text-center tracking-widest">About Me.</h2>
             <div className="flex flex-col items-center gap-8 mt-8">
               
                  <div className="max-w-3xl mx-auto text-center">
