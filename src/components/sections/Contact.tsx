@@ -14,6 +14,7 @@ export default function Contact() {
       transition={{ duration: 0.8 }}
       className="py-20 px-6 bg-cover  bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
+      data-aos="fade-down"
     >
       <div className="max-w-3xl  mx-auto text-center">
         <h2 className="text-3xl font-bold text-cyan-700 mb-4 tracking-widest">

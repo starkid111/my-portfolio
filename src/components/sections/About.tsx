@@ -13,11 +13,12 @@ export default function About() {
       transition={{ duration: 0.8 }}
       className="py-20 px-6 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/second-bg.svg')" }}
+      
     >
-      <h2 className="text-3xl font-bold mb-4 text-cyan-700 text-center tracking-widest">
+      <h2 className="text-3xl font-bold mb-4 text-cyan-700 text-center tracking-widest" data-aos="fade-up">
         About Me.
       </h2>
-      <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center gap-5" data-aos="fade-up">
         <DotLottieReact
           src="/about.lottie"
           loop

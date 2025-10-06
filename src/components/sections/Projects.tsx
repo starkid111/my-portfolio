@@ -46,6 +46,7 @@ export default function Projects() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       className="py-20 px-6"
+      data-aos="fade-up"
     >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">Projects.</h2>
