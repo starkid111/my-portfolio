@@ -11,7 +11,7 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover bg-center bg-no-repeat"
+      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: "url('/second-bg.svg')" }}
       
     >

@@ -8,6 +8,8 @@ export default function Skills() {
     "CSS",
     "JavaScript",
     "React",
+    "Git",
+    "GitHub",
     "Next.js",
     "TypeScript",
     "TailwindCSS",

@@ -14,7 +14,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6"
     >
       <Navbar />
-      <div className="flex justify-center  lg:justify-between h-screen items-center w-full lg:w-[80%]">
+      <div className="flex justify-center  lg:justify-between h-screen items-center w-full overflow-hidden lg:w-[80%]">
         <div className=" space-y-10" data-aos="fade-right">
           <h1 className=" text-5xl lg:text-7xl text-center text-gray-600  lg:text-left font-bold">
             Hi, I’m <span className="text-cyan-700">RAMADAN</span>
