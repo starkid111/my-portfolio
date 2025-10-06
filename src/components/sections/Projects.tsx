@@ -52,15 +52,10 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">Projects.</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
-            <motion.div
+            <div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
               className="rounded-2xl shadow p-6 hover:shadow-lg transition"
               style={{ backgroundImage: "url('/second-bg.svg')" }}
-              data-aos="fade-up"
             >
                <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4"/>
               <h3 className="text-xl font-semibold text-gray-600  mb-2">{project.title}</h3>
@@ -81,7 +76,7 @@ export default function Projects() {
                   <Github size={16} /> GitHub
                 </a>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
