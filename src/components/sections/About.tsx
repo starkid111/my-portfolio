@@ -1,5 +1,6 @@
 "use client";
 
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -13,19 +14,34 @@ export default function About() {
       className="py-20 px-6 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/second-bg.svg')" }}
     >
-            <h2 className="text-3xl font-bold mb-4 text-gray-600 text-center tracking-widest">About Me.</h2>
-            <div className="flex flex-col items-center gap-8 mt-8">
-              
-                 <div className="max-w-3xl mx-auto text-center">
-        <p className="text-gray-600 leading-relaxed">
-          I’m an aspiring Software Engineer with over 2 years of frontend
-          development experience. Skilled in building modern apps with React,
-          Next.js, and Tailwind. I’m passionate about solving problems,
-          bringing ideas to life, and creating experiences that users love.
-        </p>
+      <h2 className="text-3xl font-bold mb-4 text-cyan-700 text-center tracking-widest">
+        About Me.
+      </h2>
+      <div className="flex flex-col items-center gap-5">
+        <DotLottieReact
+          src="/about.lottie"
+          loop
+          autoplay
+          className="w-[500px] h-[250px]"
+        />
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-gray-600 leading-relaxed">
+            I’m a Frontend Developer with experience in  <span>React, Next.js,
+            TypeScript, and Tailwind CSS.</span> I’m passionate about building clean,
+            responsive, and user-focused web experiences that merge creativity
+            with functionality. Coming from humble beginnings, I’ve learned the
+            value of resilience, focus, and growth through every challenge. Each
+            project I take on reflects my commitment to progress, writing
+            better code, learning faster, and building solutions that stand out.
+            Right now, I’m focused on sharpening my skills, working on
+            real-world projects, and building solutions that go beyond visuals.
+            I’m chasing excellence, not shortcuts. When I’m not coding, I’m
+            probably learning something new, brainstorming wild ideas, or
+            staying low and working in silence, because success speaks loudest
+            when the grind is quiet.
+          </p>
+        </div>
       </div>
-            </div>
-     
     </motion.section>
   );
 }

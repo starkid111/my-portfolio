@@ -48,7 +48,7 @@ export default function Projects() {
       className="py-20 px-6"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-gray-600 mb-12 tracking-widest">Projects.</h2>
+        <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">Projects.</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <motion.div
@@ -57,7 +57,8 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
-              className="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition"
+              className="rounded-2xl shadow p-6 hover:shadow-lg transition"
+              style={{ backgroundImage: "url('/second-bg.svg')" }}
             >
                <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4"/>
               <h3 className="text-xl font-semibold text-gray-600  mb-2">{project.title}</h3>
@@ -66,14 +67,14 @@ export default function Projects() {
                 <a
                   href={project.demo}
                   target="_blank"
-                  className="flex items-center gap-1 text-blue-600 font-medium hover:underline"
+                  className="flex items-center gap-1 text-cyan-700 font-medium hover:underline"
                 >
                   <ExternalLink size={16} /> Live Demo
                 </a>
                 <a
                   href={project.github}
                   target="_blank"
-                  className="flex items-center gap-1 text-gray-700 font-medium hover:underline"
+                  className="flex items-center gap-1 text-gray-600 font-medium hover:underline"
                 >
                   <Github size={16} /> GitHub
                 </a>

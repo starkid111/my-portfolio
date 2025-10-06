@@ -75,10 +75,10 @@ const mobileLinks = [
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="hidden md:flex w-full justify-center items-center z-50">
+      <div className="hidden md:flex w-full justify-center  items-center z-50" >
         <div
-          className="fixed top-10 border-[0.5px] border-[#6B6B6B] flex justify-between items-center p-5 rounded-xl w-[80%]"
-          style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+          className="fixed top-10 border-[0.5px] border-[#6B6B6B]  flex justify-between items-center p-5 rounded-xl w-[80%]"
+          style={{ backgroundImage: "url('/portfolio-bg.svg')" }} data-aos="fade-down"
         >
           {navLinks.map((link) => (
             <a
@@ -90,7 +90,7 @@ const mobileLinks = [
                 className={`font-bold cursor-pointer  tracking-widest transition-colors ${
                   activeSection === link.id
                     ? "text-cyan-700"
-                    : " text-gray-600 hover:text-blue-500"
+                    : " text-gray-600 hover:text-cyan-700"
                 }`}
               >
                 {link.label}
@@ -106,7 +106,7 @@ const mobileLinks = [
         style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
         <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
-          <h1 className="font-bold text-gray-600 tracking-widest" id="home">RAMADAN.</h1>
+          <h1 className="font-bold text-cyan-700 tracking-widest" id="home">RAMADAN.</h1>
           <div onClick={handleClick} className="cursor-pointer">
             {isOpen ? <X /> : <Menu />}
           </div>
@@ -131,8 +131,8 @@ const mobileLinks = [
                   onClick={(e) => handleMenuClick(e, `#${link.id}`)}
                   className={`block px-4 py-2 font-bold tracking-widest ${
                     activeSection === link.id
-                      ? "text-blue-500"
-                      : "text-gray-800 hover:text-blue-500"
+                      ? "text-cyan-700"
+                      : "text-gray-800 hover:text-cyan-700"
                   }`}
                 >
                   {link.label}

@@ -1,5 +1,6 @@
 "use client";
 
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
 import { motion } from "framer-motion";
@@ -14,19 +15,19 @@ export default function Hero() {
     >
       <Navbar />
       <div className="flex justify-center  lg:justify-between h-screen items-center w-full lg:w-[80%]">
-        <div className=" space-y-10">
+        <div className=" space-y-10" data-aos="fade-right">
           <h1 className=" text-5xl lg:text-7xl text-center text-gray-600  lg:text-left font-bold">
             Hi, I’m <span className="text-cyan-700">RAMADAN</span>
           </h1>
           <p className="text-lg text-center  lg:text-left text-gray-600 max-w-md">
-            Frontend Developer crafting smooth, modern, and scalable web
+           A Frontend Developer crafting smooth, modern, and scalable web
             experiences with{" "}
             <span className="font-semibold">React, Next.js & TypeScript</span>.
           </p>
           <div className="mt-6 flex justify-center  lg:justify-start gap-4 flex-wrap">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-emerald-700 transition"
+              className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition"
             >
               View Projects
             </a>
@@ -45,31 +46,35 @@ export default function Hero() {
             </a>
           </div>
         </div>
-     
       </div>
 
-      <div className="absolute right-0 top-0">
+      <div className="absolute right-0 top-0" data-aos="fade-left">
         <Image src="/arc.svg" width={500} height={300} alt="arc" />
       </div>
-      <div className="absolute right-10 top-70 space-y-2  text-sm hidden lg:block">
-          <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
-  <span className="text-cyan-700 font-bold tracking-widest hover:text-blue-800 cursor-pointer transform rotate-90">
-    MEDIUM
-  </span>
-  <span className="text-cyan-700 font-bold tracking-widest cursor-pointer transform rotate-90">
-    LINKEDIN
-  </span>
-  <span className="text-cyan-700 font-bold tracking-widest  cursor-pointer transform rotate-90">
-    GITHUB
-  </span>
-  <span className="text-cyan-700 font-bold tracking-widest cursor-pointer transform  rotate-90">
-    TWITTER
-  </span>
-  <span className="text-cyan-700 font-bold tracking-widest cursor-pointer transform rotate-90">
-    INSTAGRAM
-  </span>
-</div>
-
+      <DotLottieReact
+        src="/welcome.lottie"
+        speed={0.5}
+        autoplay
+        className="absolute top-0 left-0 w-full h-full -z-10 "
+      />
+      <div className="absolute right-10 top-70 space-y-2  text-sm hidden lg:block" data-aos="fade-up">
+        <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+            MEDIUM
+          </span>
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+            LINKEDIN
+          </span>
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+            GITHUB
+          </span>
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform  rotate-90">
+            TWITTER
+          </span>
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+            INSTAGRAM
+          </span>
+        </div>
       </div>
     </motion.section>
   );
