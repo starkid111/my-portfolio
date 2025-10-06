@@ -16,7 +16,7 @@ export default function Contact() {
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
     >
       <div className="max-w-3xl  mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-600 mb-4 tracking-widest">
+        <h2 className="text-3xl font-bold text-cyan-700 mb-4 tracking-widest">
           Get In Touch.
         </h2>
         <p className="text-gray-600 mt-10">
@@ -36,27 +36,27 @@ export default function Contact() {
              <div className="flex  gap-6">
           <a
             href="mailto:your@email.com"
-            className="text-gray-500 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-cyan-700 transition"
           >
             <Mail size={28} />
           </a>
           <a
             href="https://github.com/yourusername"
             target="_blank"
-            className="text-gray-500 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-cyan-700 transition"
           >
             <Github size={28} />
           </a>
           <a
             href="https://linkedin.com/in/yourusername"
             target="_blank"
-            className="text-gray-500 hover:text-blue-600 transition"
+            className="text-gray-500 hover:text-cyan-700 transition"
           >
             <Linkedin size={28} />
           </a>
         </div>
           </div>
-          <button className="tracking-widest w-full md:w-[300px] text-blue-500 border border-gray-400 py-2 items-center">
+          <button className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center">
             SAY HELLO.
           </button>
         </div>
@@ -66,7 +66,7 @@ export default function Contact() {
       <div className="mt-20  text-gray-500 space-y-10">
           <hr />
       <p>
-        @copyright 2025 | Designed & Built by <span className="font-bold tracking-widest">RAMADAN.</span>
+        @copyright 2025 | Designed & Built by <span className="font-bold text-cyan-700 tracking-widest">RAMADAN.</span>
       </p>
       </div>
     

@@ -25,7 +25,7 @@ export default function Skills() {
       style={{ backgroundImage: "url('/second-bg.svg')" }}
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-gray-600 tracking-widest">Tech Stack.</h2>
+        <h2 className="text-3xl font-bold mb-8 text-cyan-700 tracking-widest">Tech Stack.</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill, i) => (
             <motion.span
@@ -34,7 +34,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="px-4 py-2 bg-gray-100 rounded-xl text-gray-700 font-medium shadow"
+              className="px-4 py-2 bg-gray-100 rounded-xl font-bold text-gray-600  shadow"
             >
               {skill}
             </motion.span>

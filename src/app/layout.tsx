@@ -2,6 +2,7 @@ import "./globals.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
+import Loader from "@/components/ui/loader";
 import type { Metadata } from "next";
 
 const geistSans = Geist({
@@ -26,10 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+         <head>
+        {/* ✅ Preload background image */}
+        <link rel="preload" as="image" href="/portfolio-bg.svg" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}   style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
-        {children}
+       <Loader>{children}</Loader> 
       </body>
     </html>
   );
