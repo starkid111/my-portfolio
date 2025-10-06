@@ -11,7 +11,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="relative min-h-screen flex flex-col justify-center items-center px-6"
+      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6"
     >
       <Navbar />
       <div className="flex justify-center  lg:justify-between h-screen items-center w-full lg:w-[80%]">
