@@ -27,15 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-         <head>
+      <head>
         {/* ✅ Preload background image */}
         <link rel="preload" as="image" href="/portfolio-bg.svg" />
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}   style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
-       <Loader>{children}</Loader> 
+        <Loader>{children}</Loader>
       </body>
     </html>
   );

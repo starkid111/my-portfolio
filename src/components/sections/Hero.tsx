@@ -57,7 +57,7 @@ export default function Hero() {
         autoplay
         className="absolute top-0 left-0 w-full h-full -z-10 "
       />
-      <div className="absolute right-10 top-70 space-y-2  text-sm hidden lg:block" data-aos="fade-up">
+      <div className="absolute right-10 top-100 space-y-2  text-sm hidden lg:block" data-aos="fade-up">
         <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
           <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             MEDIUM
@@ -68,12 +68,7 @@ export default function Hero() {
           <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             GITHUB
           </span>
-          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform  rotate-90">
-            TWITTER
-          </span>
-          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
-            INSTAGRAM
-          </span>
+        
         </div>
       </div>
     </motion.section>

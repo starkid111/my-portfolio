@@ -1,10 +1,14 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Contact() {
+  const [open, setOpen] = useState(false);
+
+  
   return (
     <motion.section
       id="contact"
@@ -57,7 +61,7 @@ export default function Contact() {
           </a>
         </div>
           </div>
-          <button className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center">
+          <button onClick={() => setOpen(true)} className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center">
             SAY HELLO.
           </button>
         </div>
@@ -71,6 +75,83 @@ export default function Contact() {
       </p>
       </div>
     
+
+    {/**Modal Section */}
+     <AnimatePresence>
+        {open && (
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.6 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setOpen(false)}
+              className="fixed inset-0 bg-black z-50 cursor-pointer"
+            />
+
+            {/* Modal Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.5 , type: "spring", stiffness: 300, damping: 25 }}
+              className="fixed inset-0 flex items-center justify-center z-1000 p-4"
+             
+
+            >
+              <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative"
+              style={{ backgroundImage: "url('/portfolio-bg.svg')" }}>
+                {/* Close Button */}
+                <button
+                  onClick={() => setOpen(false)}
+                  className="absolute top-3 right-4 text-gray-400 hover:text-black text-xl"
+                >
+                  ×
+                </button>
+
+                <h2 className="text-2xl text-cyan-700 font-bold mb-4">Let's Connect 👋</h2>
+                <p className="text-gray-600 mb-4 text-sm">
+                  Drop your message below — I’ll reply as soon as I can.
+                </p>
+
+                <form
+                  action="https://formspree.io/f/xrbyajja" 
+                  method="POST"
+                  className="space-y-4"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                    required
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+                    rows={4}
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="w-full py-2 rounded-lg bg-cyan-700 text-white hover:bg-cyan-600 cursor-pointer transition"
+                  >
+                    Send Message 🚀
+                  </button>
+                </form>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </motion.section>
   );
 }

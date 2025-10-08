@@ -54,13 +54,16 @@ export default function Projects() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="rounded-2xl shadow p-6 hover:shadow-lg transition"
+              className="rounded-2xl flex flex-col h-full justify-between  shadow p-6 hover:shadow-lg transition"
               style={{ backgroundImage: "url('/second-bg.svg')" }}
             >
-               <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4"/>
+              <div>
+                 <Image src={project.src} width={400} height={200} alt={project.title} className="rounded-lg mb-4 h-[180px]"/>
               <h3 className="text-xl font-semibold text-gray-600  mb-2">{project.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{project.desc}</p>
-              <div className="flex gap-3">
+              </div>
+              
+              <div className="flex gap-3 items-end ">
                 <a
                   href={project.demo}
                   target="_blank"
