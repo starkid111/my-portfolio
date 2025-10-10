@@ -20,7 +20,8 @@ export default function Contact() {
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
       data-aos="fade-down"
     >
-      <div className="max-w-3xl  mx-auto text-center">
+      <div className="max-w-3xl  mx-auto t
+      ext-center">
         <h2 className="text-3xl font-bold text-cyan-700 mb-4 tracking-widest">
           Get In Touch.
         </h2>
@@ -109,9 +110,9 @@ export default function Contact() {
                   ×
                 </button>
 
-                <h2 className="text-2xl text-cyan-700 font-bold mb-4">Let's Connect 👋</h2>
+                <h2 className="text-2xl text-cyan-700 font-bold mb-4">{`Let's Connect 👋`}</h2>
                 <p className="text-gray-600 mb-4 text-sm">
-                  Drop your message below — I’ll reply as soon as I can.
+                  {`Drop your message below — I’ll reply as soon as I can.`}
                 </p>
 
                 <form
