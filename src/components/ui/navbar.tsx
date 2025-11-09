@@ -61,7 +61,7 @@ const Navbar = () => {
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
-    { id: "contact", label: "Say Hello" },
+    { id: "contact", label: "Hire Me" },
   ];
 
 
@@ -69,7 +69,7 @@ const mobileLinks = [
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
-    { id: "contact", label: "Say Hello" },
+    { id: "contact", label: "Hire Me" },
   ];
   
   return (
