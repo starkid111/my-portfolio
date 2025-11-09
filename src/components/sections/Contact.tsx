@@ -63,7 +63,7 @@ export default function Contact() {
         </div>
           </div>
           <button onClick={() => setOpen(true)} className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center">
-            SAY HELLO.
+            HIRE ME.
           </button>
         </div>
 
