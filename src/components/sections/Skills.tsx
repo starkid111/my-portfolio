@@ -13,7 +13,6 @@ export default function Skills() {
     "Next.js",
     "TypeScript",
     "TailwindCSS",
-    "Supabase",
   ];
 
   return (
