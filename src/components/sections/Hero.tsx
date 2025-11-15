@@ -20,7 +20,7 @@ export default function Hero() {
             Hi, I’m <span className="text-cyan-700">RAMADAN</span>
           </h1>
           <p className="text-lg text-center  lg:text-left text-gray-600 max-w-md">
-           A Frontend Developer crafting smooth, modern, and scalable web
+            A Frontend Developer crafting smooth, modern, and scalable web
             experiences with{" "}
             <span className="font-semibold">React, Next.js & TypeScript</span>.
           </p>
@@ -57,7 +57,10 @@ export default function Hero() {
         autoplay
         className="absolute top-0 left-0 w-full h-full -z-10 "
       />
-      <div className="absolute right-10 top-100 space-y-2  text-sm hidden lg:block" data-aos="fade-up">
+      <div
+        className="absolute right-10 top-100 space-y-2  text-sm hidden lg:block"
+        data-aos="fade-up"
+      >
         <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
           <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             MEDIUM
@@ -68,7 +71,6 @@ export default function Hero() {
           <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             GITHUB
           </span>
-        
         </div>
       </div>
     </motion.section>

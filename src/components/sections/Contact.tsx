@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function Contact() {
   const [open, setOpen] = useState(false);
 
-  
   return (
     <motion.section
       id="contact"
@@ -20,8 +19,10 @@ export default function Contact() {
       style={{ backgroundImage: "url('/footer-bg.svg')" }}
       data-aos="fade-down"
     >
-      <div className="max-w-3xl  mx-auto t
-      ext-center">
+      <div
+        className="max-w-3xl  mx-auto t
+      ext-center"
+      >
         <h2 className="text-3xl font-bold text-cyan-700 mb-4 tracking-widest">
           Get In Touch.
         </h2>
@@ -35,50 +36,53 @@ export default function Contact() {
             </p>
             <p className="text-gray-500 text-left">Ramadanadex111@gmail.com</p>
           </div>
-            <div className="space-y-2">
+          <div className="space-y-2">
             <p className="tracking-widest text-gray-600 font-semibold text-left">
               SOCIALS
             </p>
-             <div className="flex  gap-6">
-          <a
-            href="mailto:your@email.com"
-            className="text-gray-500 hover:text-cyan-700 transition"
-          >
-            <Mail size={28} />
-          </a>
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            className="text-gray-500 hover:text-cyan-700 transition"
-          >
-            <Github size={28} />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            className="text-gray-500 hover:text-cyan-700 transition"
-          >
-            <Linkedin size={28} />
-          </a>
-        </div>
+            <div className="flex  gap-6">
+              <a
+                href="mailto:your@email.com"
+                className="text-gray-500 hover:text-cyan-700 transition"
+              >
+                <Mail size={28} />
+              </a>
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                className="text-gray-500 hover:text-cyan-700 transition"
+              >
+                <Github size={28} />
+              </a>
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                className="text-gray-500 hover:text-cyan-700 transition"
+              >
+                <Linkedin size={28} />
+              </a>
+            </div>
           </div>
-          <button onClick={() => setOpen(true)} className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center">
+          <button
+            onClick={() => setOpen(true)}
+            className="tracking-widest cursor-pointer w-full md:w-[300px] text-cyan-700 border border-gray-400 py-2 items-center"
+          >
             HIRE ME.
           </button>
         </div>
-
-       
       </div>
       <div className="mt-20  text-gray-500 space-y-10">
-          <hr />
-      <p>
-        @copyright 2025 | Designed & Built by <span className="font-bold text-cyan-700 tracking-widest">RAMADAN.</span>
-      </p>
+        <hr />
+        <p>
+          @copyright 2025 | Designed & Built by{" "}
+          <span className="font-bold text-cyan-700 tracking-widest">
+            RAMADAN.
+          </span>
+        </p>
       </div>
-    
 
-    {/**Modal Section */}
-     <AnimatePresence>
+      {/**Modal Section */}
+      <AnimatePresence>
         {open && (
           <>
             {/* Overlay */}
@@ -95,13 +99,18 @@ export default function Contact() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
-              transition={{ duration: 0.5 , type: "spring", stiffness: 300, damping: 25 }}
+              transition={{
+                duration: 0.5,
+                type: "spring",
+                stiffness: 300,
+                damping: 25,
+              }}
               className="fixed inset-0 flex items-center justify-center z-1000 p-4"
-             
-
             >
-              <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative"
-              style={{ backgroundImage: "url('/portfolio-bg.svg')" }}>
+              <div
+                className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative"
+                style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+              >
                 {/* Close Button */}
                 <button
                   onClick={() => setOpen(false)}
@@ -116,7 +125,7 @@ export default function Contact() {
                 </p>
 
                 <form
-                  action="https://formspree.io/f/xrbyajja" 
+                  action="https://formspree.io/f/xrbyajja"
                   method="POST"
                   className="space-y-4"
                 >

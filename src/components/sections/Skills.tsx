@@ -26,7 +26,9 @@ export default function Skills() {
       style={{ backgroundImage: "url('/second-bg.svg')" }}
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-cyan-700 tracking-widest">Tech Stack.</h2>
+        <h2 className="text-3xl font-bold mb-8 text-cyan-700 tracking-widest">
+          Tech Stack.
+        </h2>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill, i) => (
             <motion.span
