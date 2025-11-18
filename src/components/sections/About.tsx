@@ -38,10 +38,7 @@ export default function About() {
             commitment to progress, writing better code, learning faster, and
             building solutions that stand out. Right now, I’m focused on
             sharpening my skills, working on real-world projects, and building
-            solutions that go beyond visuals. I’m chasing excellence, not
-            shortcuts. When I’m not coding, I’m probably learning something new,
-            brainstorming wild ideas, or staying low and working in silence,
-            because success speaks loudest when the grind is quiet.
+            solutions that go beyond visuals. 
           </p>
         </div>
       </div>

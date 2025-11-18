@@ -15,19 +15,26 @@ type Project = {
 
 export default function Projects() {
   const projects: Project[] = [
-    {
-      src: "/foodieland.png",
-      title: "Food Recipe App",
-      desc: "A responsive food recipe platform built with React and Tailwind CSS, showcasing various recipes with dynamic UI components.",
-      demo: "https://foodieland-olive.vercel.app/",
-      github: "https://github.com/starkid111/Foodieland",
+     {
+      src: "/gadgetHub.png",
+      title: "Gadget Hub",
+      desc: "A Gadget Management Dashboard built to demonstrate real CRUD operations, API fetching with Axios, state management, modals, and pagination. It’s a practical front-end project that showcases my ability to structure real workflows, handle data flows, and build functional, scalable UI components.",
+      github: "https://github.com/deyemiobaa/qyrapass.com",
+      demo: "https://qyrapass-com.vercel.app/",
     },
-    {
+     {
       src: "/cauntr.png",
-      title: "E-Commerce Demo",
-      desc: "A sleek, gadget-themed e-commerce interface built with Next.js and TypeScript, crafted in collaboration with a full-stack developer.",
+      title: "Cauntr UI",
+      desc: "Cauntr is a web app for small businesses to manage inventory, track sales, and monitor profits ,built in collaboration with a full-stack developer. I handled the front-end UI with Tailwind and Next.js from Figma designs, creating reusable, mobile-first components while my partner managed data and API integration, all coordinated via Git and Github.",
       demo: "https://cauntr-ui.vercel.app/signup",
       github: "https://github.com/stDean/cauntr-ui",
+    },
+    {
+      src: "/foodieland.png",
+      title: "FoodieLand",
+      desc: "Foodieland is a recipe and food blog built with React and Tailwind CSS to showcase recipes and articles in a clean, organized layout. I implemented the full front-end UI from Figma designs, creating reusable, responsive components for recipe cards, navigation, and layout, delivering a polished, functional interface.",
+      demo: "https://foodieland-olive.vercel.app/",
+      github: "https://github.com/starkid111/Foodieland",
     },
     {
       src: "/qyra.png",
@@ -36,6 +43,7 @@ export default function Projects() {
       github: "https://github.com/deyemiobaa/qyrapass.com",
       demo: "https://qyrapass-com.vercel.app/",
     },
+   
   ];
 
   return (
@@ -51,7 +59,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">
           Projects.
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <div
               key={i}
@@ -64,7 +72,7 @@ export default function Projects() {
                   width={400}
                   height={200}
                   alt={project.title}
-                  className="rounded-lg mb-4 h-[180px]"
+                  className="rounded-lg mb-4 w-full h-[250px]"
                 />
                 <h3 className="text-xl font-semibold text-gray-600  mb-2">
                   {project.title}
