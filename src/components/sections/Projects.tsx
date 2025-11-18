@@ -19,8 +19,8 @@ export default function Projects() {
       src: "/gadgetHub.png",
       title: "Gadget Hub",
       desc: "A Gadget Management Dashboard built to demonstrate real CRUD operations, API fetching with Axios, state management, modals, and pagination. It’s a practical front-end project that showcases my ability to structure real workflows, handle data flows, and build functional, scalable UI components.",
-      github: "https://github.com/deyemiobaa/qyrapass.com",
-      demo: "https://qyrapass-com.vercel.app/",
+      github: "https://github.com/starkid111/Gadget-Manager-App",
+      demo: "https://gadget-manager-app.vercel.app/",
     },
      {
       src: "/cauntr.png",
