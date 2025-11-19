@@ -62,14 +62,14 @@ export default function Hero() {
         data-aos="fade-up"
       >
         <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
-          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
-            MEDIUM
-          </span>
-          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+           <a href="https://www.linkedin.com/in/ramadan-adewale-12aaa8244/" target="_blank" className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             LINKEDIN
-          </span>
-          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+          </a>
+          <a href="https://github.com/starkid111" target="_blank" className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
             GITHUB
+          </a>
+          <span className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+            EMAIL
           </span>
         </div>
       </div>

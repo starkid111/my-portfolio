@@ -42,20 +42,20 @@ export default function Contact() {
             </p>
             <div className="flex  gap-6">
               <a
-                href="mailto:your@email.com"
+                href="mailto:Ramadanadex111@gmail.com"
                 className="text-gray-500 hover:text-cyan-700 transition"
               >
                 <Mail size={28} />
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/starkid111"
                 target="_blank"
                 className="text-gray-500 hover:text-cyan-700 transition"
               >
                 <Github size={28} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/ramadan-adewale-12aaa8244/"
                 target="_blank"
                 className="text-gray-500 hover:text-cyan-700 transition"
               >
@@ -75,9 +75,10 @@ export default function Contact() {
         <hr />
         <p>
           @copyright 2025 | Designed & Built by{" "}
-          <span className="font-bold text-cyan-700 tracking-widest">
+          <a  href="https://github.com/starkid111"
+                target="_blank" className="font-bold text-cyan-700 tracking-widest">
             RAMADAN.
-          </span>
+          </a>
         </p>
       </div>
 
