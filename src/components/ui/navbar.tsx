@@ -8,25 +8,25 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Smooth scroll
-  const handleMenuClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ) => {
-    e.preventDefault();
+  const handleScroll = (id: string) => {
     setIsOpen(false);
 
-    const section = document.querySelector(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (id === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setActiveSection("home");
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        const offset = 80;
+        const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
     }
   };
 
-  // Track section in view
+  // Track active section
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
@@ -37,22 +37,20 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 } // ~50% visible
+      { threshold: 0.5 }
     );
 
     sections.forEach((section) => observer.observe(section));
 
-    // Special fix: reset to "home" when scrolling back to top
-    const handleScroll = () => {
-      if (window.scrollY < 100) {
-        setActiveSection("home");
-      }
+   
+    const handleTopScroll = () => {
+      if (window.scrollY < 100) setActiveSection("home");
     };
-    window.addEventListener("scroll", handleScroll);
 
+    window.addEventListener("scroll", handleTopScroll);
     return () => {
       observer.disconnect();
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleTopScroll);
     };
   }, []);
 
@@ -64,38 +62,29 @@ const Navbar = () => {
     { id: "contact", label: "Hire Me" },
   ];
 
+  const mobileLinks = navLinks.filter(link => link.id !== "home");
 
-const mobileLinks = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "skills", label: "Skills" },
-    { id: "contact", label: "Hire Me" },
-  ];
-  
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="hidden md:flex w-full justify-center  items-center z-50" >
+      <div className="hidden md:flex w-full justify-center items-center z-50">
         <div
-          className="fixed top-10 border-[0.5px] border-[#6B6B6B]  flex justify-between items-center p-5 rounded-xl w-[80%]"
-          style={{ backgroundImage: "url('/portfolio-bg.svg')" }} data-aos="fade-down"
+          className="fixed top-10 border-[0.5px] border-[#6B6B6B] flex justify-between items-center p-5 rounded-xl w-[80%]"
+          style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+          data-aos="fade-down"
         >
-          {navLinks.map((link) => (
-            <a
+          {navLinks.map(link => (
+            <p
               key={link.id}
-              href={`#${link.id}`}
-              onClick={(e) => handleMenuClick(e, `#${link.id}`)}
+              onClick={() => handleScroll(link.id)}
+              className={`font-bold cursor-pointer tracking-widest transition-colors ${
+                activeSection === link.id
+                  ? "text-cyan-700"
+                  : "text-gray-600 hover:text-cyan-700"
+              }`}
             >
-              <p
-                className={`font-bold cursor-pointer  tracking-widest transition-colors ${
-                  activeSection === link.id
-                    ? "text-cyan-700"
-                    : " text-gray-600 hover:text-cyan-700"
-                }`}
-              >
-                {link.label}
-              </p>
-            </a>
+              {link.label}
+            </p>
           ))}
         </div>
       </div>
@@ -106,13 +95,17 @@ const mobileLinks = [
         style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
       >
         <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
-          <h1 className="font-bold text-cyan-700 tracking-widest" id="home">RAMADAN.</h1>
-          <div onClick={handleClick} className="cursor-pointer">
+          <h1
+            className="font-bold text-cyan-700 tracking-widest cursor-pointer"
+            onClick={() => handleScroll("home")}
+          >
+            RAMADAN.
+          </h1>
+          <div onClick={toggleMenu} className="cursor-pointer">
             {isOpen ? <X /> : <Menu />}
           </div>
         </div>
 
-        {/* Mobile Dropdown with Framer Motion */}
         <AnimatePresence initial={false}>
           {isOpen && (
             <motion.div
@@ -124,19 +117,18 @@ const mobileLinks = [
               className="border border-gray-200 rounded-lg shadow-lg w-full backdrop-blur-md"
               style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
             >
-              {mobileLinks.map((link) => (
-                <a
+              {mobileLinks.map(link => (
+                <p
                   key={link.id}
-                  href={`#${link.id}`}
-                  onClick={(e) => handleMenuClick(e, `#${link.id}`)}
-                  className={`block px-4 py-2 font-bold tracking-widest ${
+                  onClick={() => handleScroll(link.id)}
+                  className={`block px-4 py-2 font-bold tracking-widest cursor-pointer ${
                     activeSection === link.id
                       ? "text-cyan-700"
                       : "text-gray-800 hover:text-cyan-700"
                   }`}
                 >
                   {link.label}
-                </a>
+                </p>
               ))}
             </motion.div>
           )}
