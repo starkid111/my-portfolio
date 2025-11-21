@@ -75,8 +75,11 @@ export default function Contact() {
         <hr />
         <p>
           @copyright 2025 | Designed & Built by{" "}
-          <a  href="https://github.com/starkid111"
-                target="_blank" className="font-bold text-cyan-700 tracking-widest">
+          <a
+            href="https://github.com/starkid111"
+            target="_blank"
+            className="font-bold text-cyan-700 tracking-widest"
+          >
             RAMADAN.
           </a>
         </p>

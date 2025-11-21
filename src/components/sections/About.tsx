@@ -38,7 +38,7 @@ export default function About() {
             commitment to progress, writing better code, learning faster, and
             building solutions that stand out. Right now, I’m focused on
             sharpening my skills, working on real-world projects, and building
-            solutions that go beyond visuals. 
+            solutions that go beyond visuals.
           </p>
         </div>
       </div>

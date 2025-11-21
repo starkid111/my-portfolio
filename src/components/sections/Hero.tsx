@@ -30,7 +30,9 @@ export default function Hero() {
               className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById("projects")?.scrollIntoView({behavior : "smooth" , block : "start"})
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
               View Projects
@@ -38,9 +40,11 @@ export default function Hero() {
             <a
               href="#contact"
               className="px-6 py-3 rounded-2xl border border-gray-300 font-medium hover:bg-gray-100 transition"
-               onClick={(e) => {
+              onClick={(e) => {
                 e.preventDefault();
-                document.getElementById("contact")?.scrollIntoView({behavior : "smooth" , block : "start"})
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
               Contact Me
@@ -70,14 +74,25 @@ export default function Hero() {
         data-aos="fade-up"
       >
         <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
-           <a href="https://github.com/starkid111" target="_blank" className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+          <a
+            href="https://github.com/starkid111"
+            target="_blank"
+            className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90"
+          >
             GITHUB
           </a>
-           <a href="https://www.linkedin.com/in/ramadan-adewale-12aaa8244/" target="_blank" className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+          <a
+            href="https://www.linkedin.com/in/ramadan-adewale-12aaa8244/"
+            target="_blank"
+            className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90"
+          >
             LINKEDIN
           </a>
-         
-          <a href="mailto:Ramadanadex111@gmail.com" className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90">
+
+          <a
+            href="mailto:Ramadanadex111@gmail.com"
+            className="text-cyan-700 font-bold tracking-widest hover:text-cyan-600 cursor-pointer transform rotate-90"
+          >
             EMAIL
           </a>
         </div>

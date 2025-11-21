@@ -15,14 +15,14 @@ type Project = {
 
 export default function Projects() {
   const projects: Project[] = [
-     {
+    {
       src: "/gadgetHub.png",
       title: "Gadget Hub",
       desc: "A Gadget Management Dashboard built to demonstrate real CRUD operations, API fetching with Axios, state management, modals, and pagination. It’s a practical front-end project that showcases my ability to structure real workflows, handle data flows, and build functional, scalable UI components.",
       github: "https://github.com/starkid111/Gadget-Manager-App",
       demo: "https://gadget-manager-app.vercel.app/",
     },
-     {
+    {
       src: "/cauntr.png",
       title: "Cauntr UI",
       desc: "Cauntr is a web app for small businesses to manage inventory, track sales, and monitor profits ,built in collaboration with a full-stack developer. I handled the front-end UI with Tailwind and Next.js from Figma designs, creating reusable, mobile-first components while my partner managed data and API integration, all coordinated via Git and Github.",
@@ -43,7 +43,6 @@ export default function Projects() {
       github: "https://github.com/deyemiobaa/qyrapass.com",
       demo: "https://qyrapass-com.vercel.app/",
     },
-   
   ];
 
   return (

@@ -20,7 +20,8 @@ const Navbar = () => {
       const section = document.getElementById(id);
       if (section) {
         const offset = 80;
-        const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
+        const top =
+          section.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({ top, behavior: "smooth" });
       }
     }
@@ -42,7 +43,6 @@ const Navbar = () => {
 
     sections.forEach((section) => observer.observe(section));
 
-   
     const handleTopScroll = () => {
       if (window.scrollY < 100) setActiveSection("home");
     };
@@ -62,7 +62,7 @@ const Navbar = () => {
     { id: "contact", label: "Hire Me" },
   ];
 
-  const mobileLinks = navLinks.filter(link => link.id !== "home");
+  const mobileLinks = navLinks.filter((link) => link.id !== "home");
 
   return (
     <>
@@ -73,7 +73,7 @@ const Navbar = () => {
           style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
           data-aos="fade-down"
         >
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <p
               key={link.id}
               onClick={() => handleScroll(link.id)}
@@ -117,7 +117,7 @@ const Navbar = () => {
               className="border border-gray-200 rounded-lg shadow-lg w-full backdrop-blur-md"
               style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
             >
-              {mobileLinks.map(link => (
+              {mobileLinks.map((link) => (
                 <p
                   key={link.id}
                   onClick={() => handleScroll(link.id)}
