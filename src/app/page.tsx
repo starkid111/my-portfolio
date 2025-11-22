@@ -14,7 +14,7 @@ import { useEffect } from "react";
 export default function Home() {
    useEffect(() => {
     AOS.init({
-      duration: 1500, // animation duration (ms)
+      duration: 1000, // animation duration (ms)
       once: true, // whether animation should happen only once
     });
   }, []);

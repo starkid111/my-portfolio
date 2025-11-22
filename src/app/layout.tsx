@@ -28,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Preload background image */}
         <link rel="preload" as="image" href="/portfolio-bg.svg" />
       </head>
 

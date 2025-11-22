@@ -9,7 +9,7 @@ export default function Loader({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2500); // duration in ms
+    const timer = setTimeout(() => setIsLoading(false), 1000); // duration in ms
     return () => clearTimeout(timer);
   }, []);
 
