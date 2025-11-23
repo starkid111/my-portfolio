@@ -30,7 +30,7 @@ export default function RootLayout({
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+        style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
       >
         <Loader>{children}</Loader>
       </body>

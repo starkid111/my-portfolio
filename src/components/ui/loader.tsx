@@ -23,7 +23,7 @@ export default function Loader({ children }: { children: React.ReactNode }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
           className="fixed top-0 left-0 w-full h-full  flex items-center justify-center z-[9999]"
-          style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+          style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
         >
           <DotLottieReact
             src="/loading.lottie"

@@ -70,7 +70,7 @@ const Navbar = () => {
       <div className="hidden md:flex w-full justify-center items-center z-50">
         <div
           className="fixed top-10 border-[0.5px] border-[#6B6B6B] flex justify-between items-center p-5 rounded-xl w-[80%]"
-          style={{ backgroundImage: "url('/portfolio-bg.webp')" , backgroundPosition: 'center', backgroundSize: 'contain' }}
+          style={{ backgroundImage: "url('/portfolio-bg.jpg')"}}
           data-aos="fade-down"
         >
           {navLinks.map((link) => (
