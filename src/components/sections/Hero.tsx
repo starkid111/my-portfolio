@@ -1,6 +1,7 @@
 "use client";
 
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+{/** import { DotLottieReact } from "@lottiefiles/dotlottie-react"; */}
+
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
 import { motion } from "framer-motion";
