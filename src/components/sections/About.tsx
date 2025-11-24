@@ -12,7 +12,7 @@ export default function About() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: "url('/second-bg.svg')" }}
+      style={{ backgroundImage: "url('/second-bg.jpg')" }}
     >
       <h2
         className="text-3xl font-bold mb-4 text-cyan-700 text-center tracking-widest"
