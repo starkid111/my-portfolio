@@ -27,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <head>
-        <link rel="preload" href="" />
-       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
