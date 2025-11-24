@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="mt-6 flex justify-center  lg:justify-start gap-4 flex-wrap">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition"
+              className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition z-50"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -39,7 +39,7 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 rounded-2xl border border-gray-300 font-medium hover:bg-gray-100 transition"
+              className="px-6 py-3 rounded-2xl border border-gray-300 font-medium hover:bg-gray-100 transition z-50"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -52,7 +52,7 @@ export default function Hero() {
             <a
               href="/resume.pdf"
               target="_blank"
-              className="px-6 py-3 rounded-2xl bg-gray-600 text-white font-medium shadow hover:bg-gray-900 transition"
+              className="px-6 py-3 rounded-2xl bg-gray-600 text-white font-medium shadow hover:bg-gray-900 transition z-50"
             >
               Download Resume
             </a>
