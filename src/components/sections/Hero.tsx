@@ -63,12 +63,12 @@ export default function Hero() {
       <div className="absolute right-0 top-0" data-aos="fade-left">
         <Image src="/arc.svg" width={500} height={300} alt="arc" />
       </div>
-      <DotLottieReact
+    {/** <DotLottieReact
         src="/welcome.lottie"
         speed={0.5}
         autoplay
         className="absolute top-0 left-0 w-full h-full -z-10 "
-      />
+      /> */}  
       <div
         className="absolute right-10 top-100 space-y-2  text-sm hidden lg:block"
         data-aos="fade-up"
