@@ -113,7 +113,7 @@ export default function Contact() {
             >
               <div
                 className="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative"
-                style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+                style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
               >
                 {/* Close Button */}
                 <button

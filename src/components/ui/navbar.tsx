@@ -92,7 +92,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div
         className="fixed top-0 flex flex-col w-full md:hidden z-50"
-        style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+        style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
       >
         <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
           <h1

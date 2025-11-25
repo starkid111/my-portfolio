@@ -12,7 +12,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6"
+      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden px-6 z-10"
     >
       <Navbar />
       <div className="flex justify-center  lg:justify-between h-screen items-center w-full overflow-hidden lg:w-[80%]">
@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute right-0 top-0 hidden md:block" data-aos="fade-left">
+      <div className="absolute right-0 top-0 pointer-events-none z-0" data-aos="fade-left">
         <Image src="/arc.svg" width={500} height={300} alt="arc" />
       </div>
     {/** <DotLottieReact
@@ -71,7 +71,7 @@ export default function Hero() {
         className="absolute top-0 left-0 w-full h-full -z-10 "
       /> */}  
       <div
-        className="absolute right-10 top-100 space-y-2  text-sm hidden lg:block"
+        className="hidden lg:block absolute right-10 top-100 space-y-2 text-sm z-0"
         data-aos="fade-up"
       >
         <div className="flex flex-col justifiy-between  items-center space-y-20    transform ">
