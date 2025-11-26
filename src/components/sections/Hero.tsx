@@ -1,9 +1,12 @@
 "use client";
 
-{/** import { DotLottieReact } from "@lottiefiles/dotlottie-react"; */}
+{
+  /** import { DotLottieReact } from "@lottiefiles/dotlottie-react"; */
+}
 
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
+import Shuffle from "../Shuffle";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -17,9 +20,38 @@ export default function Hero() {
       <Navbar />
       <div className="flex justify-center  lg:justify-between h-screen items-center w-full overflow-hidden lg:w-[80%]">
         <div className=" space-y-10" data-aos="fade-right">
-          <h1 className=" text-5xl lg:text-7xl text-center text-gray-600  lg:text-left font-bold">
-            Hi, I’m <span className="text-cyan-700">RAMADAN</span>
-          </h1>
+          <div className="text-center lg:text-left">
+            <div className="text-5xl lg:text-7xl font-bold flex flex-wrap justify-center lg:justify-start gap-0.5 lg:gap-3">
+              <Shuffle
+                text="Hi, I'm"
+                shuffleDirection="right"
+                duration={0.35}
+                animationMode="evenodd"
+                shuffleTimes={1}
+                ease="power3.out"
+                stagger={0.03}
+                threshold={0.1}
+                triggerOnce={true}
+                triggerOnHover={true}
+                className="text-gray-600 text-5xl lg:text-7xl font-bold"
+              />
+
+              <Shuffle
+                text="RAMADAN."
+                shuffleDirection="right"
+                duration={0.35}
+                animationMode="evenodd"
+                shuffleTimes={1}
+                ease="power3.out"
+                stagger={0.03}
+                threshold={0.1}
+                triggerOnce={true}
+                triggerOnHover={true}
+                className="text-cyan-700 text-5xl lg:text-7xl font-bold"
+              />
+            </div>
+          </div>
+
           <p className="text-lg text-center  lg:text-left text-gray-600 max-w-md">
             A Frontend Developer crafting smooth, modern, and scalable web
             experiences with{" "}
@@ -61,15 +93,18 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute right-0 top-0 pointer-events-none z-0" data-aos="fade-left">
+      <div
+        className="absolute right-0 top-0 pointer-events-none z-0"
+        data-aos="fade-left"
+      >
         <Image src="/arc.svg" width={500} height={300} alt="arc" />
       </div>
-    {/** <DotLottieReact
+      {/** <DotLottieReact
         src="/welcome.lottie"
         speed={0.5}
         autoplay
         className="absolute top-0 left-0 w-full h-full -z-10 "
-      /> */}  
+      /> */}
       <div
         className="hidden lg:block absolute right-10 top-100 space-y-2 text-sm z-0"
         data-aos="fade-up"
