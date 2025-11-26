@@ -63,7 +63,7 @@ export default function Projects() {
             <div
               key={i}
               className="rounded-2xl flex flex-col h-full justify-between  shadow p-6 hover:shadow-lg transition"
-              style={{ backgroundImage: "url('/second-bg.jpg')" }}
+              style={{ backgroundImage: "url('/project-bg.jpg')" }}
             >
               <div>
                 <Image
