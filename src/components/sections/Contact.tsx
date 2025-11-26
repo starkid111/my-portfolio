@@ -15,8 +15,8 @@ export default function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover  bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/footer-bg.svg')" }}
+      className="py-20 px-6 bg-cover  bg-center bg-no-repeat" 
+      style={{ backgroundImage: "url('/footer-bg.jpg')" }}
       data-aos="fade-down"
     >
       <div
