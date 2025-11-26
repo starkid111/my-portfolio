@@ -25,7 +25,7 @@ export default function Hero() {
               <Shuffle
                 text="Hi, I'm"
                 shuffleDirection="right"
-                duration={0.35}
+                duration={0.8}
                 animationMode="evenodd"
                 shuffleTimes={1}
                 ease="power3.out"
@@ -39,7 +39,7 @@ export default function Hero() {
               <Shuffle
                 text="RAMADAN."
                 shuffleDirection="right"
-                duration={0.35}
+                duration={0.8}
                 animationMode="evenodd"
                 shuffleTimes={1}
                 ease="power3.out"
