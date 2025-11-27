@@ -6,9 +6,11 @@ import AOS from "aos";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
+// import ProjectGrid from "@/components/sections/ProjectGrid";
 import Projects from "@/components/sections/Projects";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import Skills from "@/components/sections/Skills";
+// import TechStack from "@/components/sections/TechStack";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -24,7 +26,9 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      {/**<ProjectGrid /> */}
       <Skills />
+     {/**<TechStack />*/}
       <Contact />
     </main>
   );
