@@ -28,8 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased portfolio-bg`}
       >
         <Loader>{children}</Loader>
       </body>

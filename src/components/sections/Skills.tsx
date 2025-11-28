@@ -22,8 +22,7 @@ export default function Skills() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/second-bg.jpg')" }}
+      className="py-20 px-6 bg-cover bg-center bg-no-repeat secondary-bg"
     >
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-cyan-700 tracking-widest">

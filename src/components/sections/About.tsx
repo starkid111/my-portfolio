@@ -11,8 +11,7 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: "url('/second-bg.jpg')" }}
+      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden secondary-bg"
     >
       <h2
         className="text-3xl font-bold mb-4 text-cyan-700 text-center tracking-widest"
