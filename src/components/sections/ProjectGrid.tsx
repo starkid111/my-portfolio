@@ -63,8 +63,6 @@ const ProjectGrid = () => {
     items={items}
     radius={300}
     damping={0.45}
-    fadeOut={0.6}
-    ease="power3.out"
     className="w-full h-full"
   />
 </div> 

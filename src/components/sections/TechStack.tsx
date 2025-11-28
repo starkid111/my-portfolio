@@ -4,18 +4,6 @@ import CurvedLoop from "../CurvedLoop";
 import { motion } from "framer-motion";
 
 export default function TechStack() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Git",
-    "GitHub",
-    "Next.js",
-    "TypeScript",
-    "TailwindCSS",
-  ];
-
   return (
     <motion.section
       id="skills"
