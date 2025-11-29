@@ -11,7 +11,8 @@ const items = [
     
     borderColor: "#007595",
     gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/starkid111/Gadget-Manager-App"
+    url: "https://github.com/starkid111/Gadget-Manager-App",
+       github: "https://github.com/starkid111/Gadget-Manager-App",
   },
   {
     image: "/cauntr.png",
@@ -20,7 +21,8 @@ const items = [
   
     borderColor: "#10B981",
     gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/stDean/cauntr-ui"
+    url: "https://github.com/stDean/cauntr-ui",
+      github: "https://github.com/stDean/cauntr-ui",
   },
    {
     image: "/foodieland.png",
@@ -29,7 +31,8 @@ const items = [
 
     borderColor: "#3B82F6",
 gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/starkid111/Foodieland"
+    url: "https://github.com/starkid111/Foodieland",
+    github: "https://github.com/starkid111/Foodieland",
   },
   {
     image: "/qyra.png",
@@ -38,7 +41,8 @@ gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
   
     borderColor: "#10B981",
 gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/deyemiobaa/qyrapass.com"
+    url: "https://github.com/deyemiobaa/qyrapass.com",
+     github: "https://github.com/deyemiobaa/qyrapass.com",
   }
 ];
 
