@@ -11,7 +11,7 @@ const items = [
     
     borderColor: "#007595",
     gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/starkid111/Gadget-Manager-App",
+    url: "https://gadget-manager-app.vercel.app/",
        github: "https://github.com/starkid111/Gadget-Manager-App",
   },
   {
@@ -21,7 +21,7 @@ const items = [
   
     borderColor: "#10B981",
     gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/stDean/cauntr-ui",
+    url: "https://cauntr-ui.vercel.app/signup",
       github: "https://github.com/stDean/cauntr-ui",
   },
    {
@@ -31,7 +31,7 @@ const items = [
 
     borderColor: "#3B82F6",
 gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/starkid111/Foodieland",
+    url: "https://foodieland-olive.vercel.app/",
     github: "https://github.com/starkid111/Foodieland",
   },
   {
@@ -41,7 +41,7 @@ gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
   
     borderColor: "#10B981",
 gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
-    url: "https://github.com/deyemiobaa/qyrapass.com",
+    url:  "https://qyrapass-com.vercel.app/",
      github: "https://github.com/deyemiobaa/qyrapass.com",
   }
 ];
