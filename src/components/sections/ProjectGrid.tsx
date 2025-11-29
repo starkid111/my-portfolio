@@ -51,7 +51,7 @@ gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
 const ProjectGrid = () => {
   return (
     <motion.section
-      id="projects"
+      id="project-grid"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

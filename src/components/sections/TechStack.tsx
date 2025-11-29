@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function TechStack() {
   return (
     <motion.section
-      id="skills"
+      id="tech-stack"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
