@@ -91,10 +91,10 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div
-        className="fixed top-0 flex flex-col w-full md:hidden z-50"
-        style={{ backgroundImage: "url('/portfolio-bg.jpg')" }}
+        className="fixed top-0 flex flex-col w-full md:hidden z-50 portfolio-bg"
+        
       >
-        <div className="flex w-full p-5 border-b border-[#6B6B6B] justify-between items-center">
+        <div className="flex w-full p-5 border-b border-[#6B6B6B]/50 justify-between items-center">
           <h1
             className="font-bold text-cyan-700 tracking-widest cursor-pointer"
             onClick={() => handleScroll("home")}
@@ -114,8 +114,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="border border-gray-200 rounded-lg shadow-lg w-full backdrop-blur-md"
-              style={{ backgroundImage: "url('/portfolio-bg.svg')" }}
+              className="border border-gray-200 rounded-lg shadow-lg w-full backdrop-blur-md portfolio-bg"
             >
               {mobileLinks.map((link) => (
                 <p
