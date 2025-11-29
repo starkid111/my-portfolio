@@ -60,11 +60,23 @@ export default function Hero() {
           <div className="mt-6 flex justify-center  lg:justify-start gap-4 flex-wrap">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition z-50"
+              className="block md:hidden  px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition z-50"
               onClick={(e) => {
                 e.preventDefault();
                 document
                   .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            >
+              View Projects
+            </a>
+             <a
+              href="#project-grid"
+              className="hidden md:block px-6 py-3 rounded-2xl bg-cyan-700 text-white font-medium shadow hover:bg-cyan-600 transition z-50"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("project-grid")
                   ?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
