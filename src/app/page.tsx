@@ -39,8 +39,11 @@ const containerRef = useRef<HTMLDivElement>(null);
       </div>
      
       <Contact />
-     
-    <Crosshair containerRef={containerRef} color=' #007595'/> 
+      
+      <div className="hidden md:block ">
+          <Crosshair containerRef={containerRef} color=' #007595'/> 
+      </div>
+  
  
     </main>
   );
