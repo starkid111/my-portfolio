@@ -3,6 +3,7 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import Loader from "@/components/ui/loader";
+import TargetCursor from "@/components/TargetCursor";
 import type { Metadata } from "next";
 
 const geistSans = Geist({
@@ -30,6 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased portfolio-bg`}
       >
+        <TargetCursor
+          spinDuration={2}
+          hideDefaultCursor
+          parallaxOn
+          hoverDuration={0.2}
+          targetSelector="button, a, .cursor-target"
+        />
         <Loader>{children}</Loader>
       </body>
     </html>

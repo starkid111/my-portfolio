@@ -2,12 +2,11 @@
 
 import "aos/dist/aos.css";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 import AOS from "aos";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
-import Crosshair from "@/components/Crosshair";
 import Hero from "@/components/sections/Hero";
 import ProjectGrid from "@/components/sections/ProjectGrid";
 import Projects from "@/components/sections/Projects";
@@ -16,35 +15,27 @@ import Skills from "@/components/sections/Skills";
 import TechStack from "@/components/sections/TechStack";
 
 export default function Home() {
-const containerRef = useRef<HTMLDivElement>(null);
-  
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (
-    <main  ref={containerRef} className="min-h-screen relative  text-gray-900">
+    <main className="min-h-screen relative  text-gray-900">
       <ScrollToTop />
       <Hero />
       <About />
       <div className="block md:hidden ">
-          <Projects /> 
-         <Skills />
+        <Projects />
+        <Skills />
       </div>
       <div className="hidden md:block">
-          <ProjectGrid /> 
-           <TechStack />
+        <ProjectGrid />
+        <TechStack />
       </div>
-     
+
       <Contact />
-      
-      <div className="hidden md:block ">
-          <Crosshair containerRef={containerRef} color=' #007595'/> 
-      </div>
-  
- 
     </main>
   );
 }

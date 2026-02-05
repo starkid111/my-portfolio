@@ -51,7 +51,7 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-   const Links = [
+  const Links = [
     { id: "home", label: "RAMADAN." },
     { id: "about", label: "About" },
     { id: "project-grid", label: "Projects" },
@@ -80,11 +80,10 @@ const Navbar = () => {
           <p
             key={link.id}
             onClick={() => handleScroll(link.id)}
-            className={`font-bold cursor-pointer tracking-widest transition-colors ${
-              activeSection === link.id
+            className={`font-bold cursor-pointer tracking-widest transition-colors cursor-target ${activeSection === link.id
                 ? "text-cyan-700"
                 : "text-gray-600 hover:text-cyan-700"
-            }`}
+              }`}
           >
             {link.label}
           </p>
@@ -95,7 +94,7 @@ const Navbar = () => {
       <div className="fixed top-0 w-full md:hidden z-[60] portfolio-bg">
         <div className="flex w-full p-5 border-b border-[#6B6B6B]/50 justify-between items-center">
           <h1
-            className="font-bold text-cyan-700 tracking-widest cursor-pointer"
+            className="font-bold text-cyan-700 tracking-widest cursor-pointer cursor-target"
             onClick={() => handleScroll("home")}
           >
             RAMADAN.
@@ -122,11 +121,10 @@ const Navbar = () => {
                   <p
                     key={link.id}
                     onClick={() => handleScroll(link.id)}
-                    className={`px-4 py-3 font-bold tracking-widest cursor-pointer ${
-                      activeSection === link.id
+                    className={`px-4 py-3 font-bold tracking-widest cursor-pointer cursor-target ${activeSection === link.id
                         ? "text-cyan-700"
                         : "text-gray-800 hover:text-cyan-700"
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </p>
