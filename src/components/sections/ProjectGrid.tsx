@@ -74,7 +74,7 @@ const ProjectGrid = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden secondary-bg"
+      className="py-20 px-6"
     >
       <div className="w-full" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">
