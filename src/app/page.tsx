@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import ProjectGrid from "@/components/sections/ProjectGrid";
@@ -26,6 +27,7 @@ export default function Home() {
       <ScrollToTop />
       <Hero />
       <About />
+      <Experience />
       <div className="block md:hidden ">
         <Projects />
         <Skills />

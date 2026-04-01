@@ -12,6 +12,7 @@ export interface ChromaItem {
   borderColor?: string;
   gradient?: string;
   url?: string;
+  github?: string;
 }
 
 export interface ChromaGridProps {
@@ -197,13 +198,15 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
               >
                 <ExternalLink size={16} /> Live Demo
               </a>
-              <a
-                href={c.url}
-                target="_blank"
-                className="flex items-center gap-1 text-gray-600 font-medium hover:underline"
-              >
-                <Github size={16} /> GitHub
-              </a>
+              {c.github && c.github !== "private" && c.github !== "#" && (
+                <a
+                  href={c.github}
+                  target="_blank"
+                  className="flex items-center gap-1 text-gray-600 font-medium hover:underline"
+                >
+                  <Github size={16} /> GitHub
+                </a>
+              )}
             </div>
           </footer>
         </article>

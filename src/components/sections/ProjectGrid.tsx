@@ -5,6 +5,24 @@ import { motion } from "framer-motion";
 
 const items = [
   {
+    image: "/lena.png",
+    title: "Lena",
+    subtitle: "Lena is an AI-powered EdTech platform that accelerates learning for primary students by blending a personalized AI tutor with curriculum-aligned gamification. I architected its robust offline-first PWA system, ensuring a seamless experience for students, parents, and schools even in low-connectivity areas.",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
+    url: "https://uselena.com/",
+    github: "private",
+  },
+  {
+    image: "/spotlight.png",
+    title: "Spotlight",
+    subtitle: "Spotlight is an event management and talent discovery platform for professionals. Built in collaboration with a team where I worked as the frontend developer, it allows users to create portfolios, showcase their skills, and features an 'Explore' page for recruiters to discover and connect with top talent.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(to bottom, #007595,   #D9D9D8 ,#D9D9D8 )",
+    url: "https://spotlight-flax.vercel.app/",
+    github: "https://github.com/Fortress-Team/frontend",
+  },
+  {
     image: "/gadgetHub.png",
     title: "GadgetHub",
     subtitle: "A Gadget Management Dashboard built to demonstrate real CRUD operations, API fetching with Axios, state management, modals, and pagination. It’s a practical front-end project that showcases my ability to structure real workflows, handle data flows, and build functional, scalable UI components.",
@@ -56,7 +74,7 @@ const ProjectGrid = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6"
+      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden secondary-bg"
     >
       <div className="w-full" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">

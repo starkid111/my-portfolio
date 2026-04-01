@@ -15,6 +15,21 @@ type Project = {
 
 export default function Projects() {
   const projects: Project[] = [
+     {
+      src: "/lena.png",
+      title: "Lena",
+      desc: "Lena is an AI-powered EdTech platform that accelerates learning for primary students by blending a personalized AI tutor with curriculum-aligned gamification. I architected its robust offline-first PWA system, ensuring a seamless experience for students, parents, and schools even in low-connectivity areas.",
+      demo: "https://uselena.com/",
+      github: "private",
+    },
+     {
+      src: "/spotlight.png",
+      title: "Spotlight",
+      desc: "Spotlight is a talent discovery platform for professionals. Built in collaboration with a team where I worked as the frontend developer, it allows users to create portfolios, showcase their skills, and features an 'Explore' page for recruiters to discover and connect with top talent.",
+      demo: "https://spotlight-flax.vercel.app/",
+      github: "https://github.com/Fortress-Team/frontend",
+    },
+   
     {
       src: "/gadgetHub.png",
       title: "Gadget Hub",
@@ -43,6 +58,7 @@ export default function Projects() {
       github: "https://github.com/deyemiobaa/qyrapass.com",
       demo: "https://qyrapass-com.vercel.app/",
     },
+   
   ];
 
   return (
@@ -52,7 +68,7 @@ export default function Projects() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-20 px-6"
+      className="py-20 px-6 bg-cover bg-center bg-no-repeat overflow-hidden secondary-bg"
     >
       <div className="max-w-5xl mx-auto" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-cyan-700 mb-12 tracking-widest">
@@ -87,13 +103,15 @@ export default function Projects() {
                 >
                   <ExternalLink size={16} /> Live Demo
                 </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="flex items-center gap-1 text-gray-600 font-medium hover:underline"
-                >
-                  <Github size={16} /> GitHub
-                </a>
+                {project.github !== "private" && project.github !== "#" && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className="flex items-center gap-1 text-gray-600 font-medium hover:underline"
+                  >
+                    <Github size={16} /> GitHub
+                  </a>
+                )}
               </div>
             </div>
           ))}
