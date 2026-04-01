@@ -18,7 +18,7 @@ export default function Projects() {
      {
       src: "/lena.png",
       title: "Lena",
-      desc: "Lena is an AI-powered EdTech platform that accelerates learning for primary students by blending a personalized AI tutor with curriculum-aligned gamification. I architected its robust offline-first PWA system, ensuring a seamless experience for students, parents, and schools even in low-connectivity areas.",
+      desc: "Lena is an AI-powered EdTech platform that accelerates learning for primary students by blending a personalized AI tutor with curriculum-aligned gamification.",
       demo: "https://uselena.com/",
       github: "private",
     },
